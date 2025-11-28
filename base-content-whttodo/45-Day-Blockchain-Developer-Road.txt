@@ -1,0 +1,227 @@
+🚀 45-Day Blockchain Developer Roadmap (Custom for You)
+
+Each week trains one pillar → Blockchain + Rust + Solana + dApps.
+
+🔥 WEEK 1: Blockchain Foundations (Days 1–7)
+
+Goal: Understand how blockchain works end-to-end.
+
+Day 1
+
+What is blockchain?
+
+How blocks, nodes, mining, validators work
+
+Day 2
+
+Public-key cryptography (private key, public key)
+
+Wallets & signatures
+
+Day 3
+
+Transactions, gas fees, mempool
+
+Ethereum vs Solana (speed, gas, consensus)
+
+Day 4
+
+Tokens: ERC-20, SPL tokens (Solana)
+
+NFTs: ERC-721, Metaplex
+
+Day 5
+
+Smart Contracts basics
+
+What is EVM vs non-EVM
+
+Day 6
+
+Decentralized storage: IPFS, Arweave
+
+RPC nodes: Alchemy, QuickNode
+
+Day 7
+
+Build: Your first dApp prototype
+(A simple wallet-connect React app)
+
+🔥 WEEK 2: Web3 Frontend (Days 8–13)
+
+Goal: Become strong in dApp UI + wallet integration.
+
+Day 8
+
+Next.js App Router
+
+Server vs Client components
+
+Day 9
+
+TypeScript fundamentals for blockchain apps
+
+Day 10
+
+Ethers.js basics → read blockchain data
+
+Day 11
+
+Solana Web3.js basics → connect, send SOL
+
+Day 12
+
+Wallet integration (Phantom / MetaMask)
+
+Signing messages
+
+Day 13
+
+Build: Wallet Login + User Dashboard
+
+🔥 WEEK 3: Rust Fundamentals (Days 14–20)
+
+Goal: Get fluent in Rust (hard but you’ll handle it).
+
+Day 14
+
+Rust basics: variables, types, functions
+
+Day 15
+
+Ownership, Borrowing, Lifetimes (core Rust skill)
+
+Day 16
+
+Structs, Traits, Enums, Pattern Matching
+
+Day 17
+
+Error handling → Result, Option
+
+Day 18
+
+Cargo, Crates, Modules
+
+Day 19
+
+Async Rust
+
+Small Rust projects (CLI tool)
+
+Day 20
+
+Build: Rust backend microservice
+(Simple API in Rust)
+
+🔥 WEEK 4: Solana + Anchor Smart Contracts (Days 21–31)
+
+Goal: Learn Solana Program Development (main skill in job).
+
+Day 21
+
+Solana architecture
+
+Accounts, Programs, PDAs
+
+Day 22
+
+Anchor basics
+
+Setting up workspace
+
+Day 23
+
+Build your first Solana program (starter project)
+
+Day 24
+
+Token program – creating SPL tokens
+
+Day 25
+
+NFT metadata + Metaplex
+
+Day 26
+
+CPI calls, cross-program invocation
+
+Day 27
+
+Deploy your program to Devnet
+
+Day 28–29
+
+Build: Token Minting Program
+
+Day 30–31
+
+Build: Solana Voting Program
+(accounts + PDA + validation)
+
+🔥 WEEK 5: dApp Integration + Backend (Days 32–38)
+
+Goal: Connect smart contracts with UI.
+
+Day 32
+
+Solana Wallet Adapter
+
+Connecting programs
+
+Day 33
+
+Calling Rust smart contracts from React
+
+Day 34
+
+Node.js API for blockchain data indexing
+
+Day 35
+
+Event listeners
+
+Account parsers
+
+Day 36
+
+Token transfers dApp
+
+Day 37–38
+
+Build: Complete Solana dApp
+(UI + Program + Wallet login)
+
+🔥 WEEK 6: Projects + Portfolio (Days 39–45)
+
+Goal: Get hired with strong proof-of-work.
+
+Day 39–41 → Project 1
+
+✅ Solana Token Generator
+Create a website where users mint their own SPL tokens.
+
+Day 42–43 → Project 2
+
+✅ Web3 Login + User Dashboard
+Wallet login + on-chain user data.
+
+Day 44–45 → Project 3
+
+✅ Staking dApp
+Stake tokens + earn rewards
+→ This is a perfect resume + GitHub project.
+
+🎯 Final Outcome After 45 Days
+
+You will be able to:
+
+✔ Build blockchain dApps
+✔ Write smart contracts in Rust + Anchor
+✔ Build Solana programs
+✔ Integrate wallet auth
+✔ Work with tokens & NFTs
+✔ Deploy full-stack Web3 apps
+✔ Apply for Blockchain Developer roles confidently
+
+YES — this is 100% job-ready level.
