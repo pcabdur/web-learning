@@ -1,0 +1,273 @@
+🟦 DAY 1 — Web2 Foundations → React → Blockchain Basics (19 hrs)
+🕐 Hour 0–1 — Setup
+
+Install VS Code
+
+Install Node.js
+
+Install Git
+
+Setup GitHub account
+
+Create a folder: web3-learning
+
+🟩 HTML + CSS + JS Crash (4 hours)
+
+⚡ Goal: Know the basics, not mastery.
+
+Hour 1–2: HTML
+
+tags
+
+div, span
+
+forms
+
+lists
+
+images
+
+Hour 2–3: CSS
+
+selectors
+
+margin, padding, border
+
+flexbox
+
+simple responsive layout
+
+Hour 3–5: JavaScript
+
+variables
+
+arrays
+
+objects
+
+loops
+
+functions
+
+DOM
+
+events
+
+🎯 End of this block: build a simple "counter app" in pure JS.
+
+🟦 React.js (5 hours)
+
+⚡ Goal: Build apps using components + hooks.
+
+Hour 5–6:
+
+Create React app (Vite)
+
+Components
+
+Props
+
+Hour 6–8:
+
+useState
+
+useEffect
+
+Handling events
+
+Rendering lists
+
+Hour 8–10:
+
+🔥 Build mini React projects:
+
+Todo app
+
+Student list
+
+API fetch app
+
+🟨 Blockchain Basics + MetaMask (4 hours)
+Hour 10–12: Theory (FAST)
+
+what is blockchain
+
+wallets
+
+private keys
+
+transactions
+
+gas
+
+EVM
+
+Hour 12–14: MetaMask + Remix setup
+
+install MetaMask
+
+create wallet
+
+connect to testnet
+
+send test ETH
+
+open Remix IDE
+
+🎯 End: You can deploy a sample contract using Remix.
+
+🟥 Solidity Basics (5 hours)
+Hour 14–16:
+
+pragma
+
+variables
+
+functions
+
+events
+
+mappings
+
+structs
+
+Hour 16–18:
+
+Write your first 3 contracts:
+
+Hello World
+
+Simple Storage
+
+Counter contract
+
+Hour 18–19:
+
+Deploy contracts on Remix testnet.
+
+💙 DAY 1 DONE — You have basic Web3 knowledge
+
+Sleep 5 hours (minimum).
+Eat something.
+We go full power Day 2.
+
+🟩 DAY 2 — Hardhat → Ethers.js → Advanced Web3 → NFT → Deploy (19 hrs)
+🛠 Hardhat Crash Course (4 hours)
+Hour 0–1:
+
+install hardhat
+
+create project
+
+understand structure
+
+Hour 1–3:
+
+write a smart contract in hardhat
+
+compile
+
+unit testing
+
+run local node
+
+Hour 3–4:
+
+deploy to testnet (Polygon or Sepolia)
+
+🎯 End: you can deploy contracts using scripts.
+
+🔗 Ethers.js (4 hours)
+Hour 4–6:
+
+connect wallet
+
+connect to provider
+
+read contract functions
+
+Hour 6–8:
+
+write transactions
+
+send tokens
+
+event listeners
+
+🎯 End: you can build real DApps that talk to contracts.
+
+💾 IPFS + Pinata (2 hours)
+Hour 8–9:
+
+upload file
+
+get CID
+
+Hour 9–10:
+
+fetch IPFS data from frontend
+
+🎯 End: You can upload NFT metadata.
+
+🪙 ERC Token + NFT Smart Contracts (4 hours)
+Hour 10–11:
+
+ERC-20 contract (OpenZeppelin)
+
+Hour 11–12:
+
+ERC-721 NFT minting
+
+Hour 12–14:
+
+build a minting function
+
+deploy NFT contract
+
+test minting in Remix and Hardhat
+
+🎯 End: You can build your own NFT & Token.
+
+🌐 Frontend + Web3 Integration (4 hours)
+Hour 14–16:
+
+React + Ethers setup
+
+Connect MetaMask
+
+Show wallet address
+
+Hour 16–18:
+
+Build NFT Mint UI
+
+Connect to your smart contract
+
+Mint from frontend
+
+🎯 End: You built a working NFT mint website.
+
+🚀 Deployment (1 hour)
+Hour 18–19:
+
+deploy React site to Vercel
+
+connect domain
+
+test live minting
+
+🎯 End: Your DApp is LIVE.
+
+🔥 FINAL RESULT AFTER 48 HOURS
+
+You can now do:
+
+✔ Build frontend apps (React)
+✔ Write Solidity smart contracts
+✔ Deploy with Hardhat
+✔ Mint NFTs
+✔ Create ERC-20 tokens
+✔ Connect React ↔ Blockchain
+✔ Deploy full DApps on Vercel
+
+This is full Web3 developer level.
