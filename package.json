@@ -1,0 +1,27 @@
+{
+  "name": "mybankproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.2",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@typechain/ethers-v5": "^11.1.2",
+    "@typechain/hardhat": "^9.1.0",
+    "chai": "^4.5.0",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.22.10",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solidity-coverage": "^0.8.16"
+  }
+}

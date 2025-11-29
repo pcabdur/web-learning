@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>My Real Bank - CLEAN ERRORS</title>
+<style>
+  body {margin:0;padding:0;background:#000;color:#0ff;font-family:Courier New;display:flex;align-items:center;justify-content:center;min-height:100vh;}
+  .box {background:#001122;padding:50px;border-radius:25px;border:3px solid cyan;text-align:center;box-shadow:0 0 50px #0ff;}
+  button {padding:18px 40px;margin:15px;font-size:22px;background:transparent;color:cyan;border:3px solid cyan;border-radius:15px;cursor:pointer;}
+  button:hover {background:cyan;color:black;}
+  input {padding:15px;width:280px;font-size:20px;background:#000;color:cyan;border:3px solid cyan;border-radius:15px;text-align:center;}
+  .balance {font-size:50px Courier New;margin:40px;}
+  #status {margin-top:25px;font-size:20px;height:30px;}
+</style>
+</head><body>
+<div class="box">
+  <h1>MY REAL BANK</h1>
+  <button onclick="connect()">CONNECT WALLET</button>
+  <p id="account"></p>
+  <div class="balance"><span id="balance">0</span> ETH</div>
+  <input type="number" step="0.001" id="amount" placeholder="Amount in ETH" />
+  <br><br>
+  <button onclick="deposit()">DEPOSIT</button>
+  <button onclick="withdraw()">WITHDRAW</button>
+  <p id="status"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<script>
+  const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const ABI = ["function deposit() payable","function withdraw(uint256 amount)","function getBalance() view returns (uint256)"];
+  let provider, signer, contract, account;
+
+  async function connect() {
+    provider = new ethers.providers.JsonRpcProvider("http://127.0.0.1:8545");
+    const accounts = await provider.listAccounts();
+    signer = provider.getSigner(accounts[0]);
+    account = accounts[0];
+    contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+    document.getElementById("account").innerHTML = "Connected: " + account.slice(0,10) + "...";
+    updateBalance();
+  }
+
+  async function updateBalance() {
+    const bal = await contract.getBalance();
+    document.getElementById("balance").innerText = ethers.utils.formatEther(bal);
+  }
+
+  async function deposit() {
+    const amt = document.getElementById("amount").value;
+    if (!amt || amt <= 0) return setStatus("Enter valid amount", "red");
+    setStatus("Depositing...", "cyan");
+    try {
+      const tx = await contract.deposit({ value: ethers.utils.parseEther(amt) });
+      await tx.wait();
+      setStatus("Deposited!", "lime");
+      updateBalance();
+    } catch (e) {
+      setStatus("Deposit failed bro", "red");
+    }
+  }
+
+  async function withdraw() {
+    const amt = document.getElementById("amount").value;
+    if (!amt || amt <= 0) return setStatus("Enter valid amount", "red");
+    setStatus("Withdrawing...", "cyan");
+    try {
+      const tx = await contract.withdraw(ethers.utils.parseEther(amt));
+      await tx.wait();
+      setStatus("Withdrawn!", "lime");
+      updateBalance();
+    } catch (e) {
+      // THIS IS WHAT YOU WANTED
+      if (e.reason?.includes("Insufficient balance") || e.error?.message?.includes("Insufficient balance")) {
+        setStatus("Insufficient balance bro", "red");
+      } else {
+        setStatus("Withdraw failed", "red");
+      }
+    }
+  }
+
+  function setStatus(msg, color) {
+    const el = document.getElementById("status");
+    el.innerText = msg;
+    el.style.color = color;
+  }
+</script>
+</body></html>
